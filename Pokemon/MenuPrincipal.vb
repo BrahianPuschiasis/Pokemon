@@ -5,9 +5,14 @@ Imports System.Windows.Forms
 Imports System.ComponentModel
 Imports System.Drawing
 Imports System.Threading
+Imports NAudio.Wave
+
 
 
 Public Class MenuPrincipal
+    Private waveOut As WaveOutEvent
+    Private mp3Reader As Mp3FileReader
+
 
     Private Sub btnRegistro_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRegistro.Click
         Registro.Show()
@@ -232,9 +237,19 @@ Public Class MenuPrincipal
 
 
     Private Sub MenuPrincipal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
+        ' Ruta relativa al archivo MP3 en la carpeta principal del proyecto
+        Dim mp3Path As String = System.IO.Path.Combine(Application.StartupPath, "Login.mp3")
+        mp3Reader = New Mp3FileReader(mp3Path)
+        waveOut = New WaveOutEvent()
+        waveOut.Init(mp3Reader)
+        waveOut.Volume = 0.1F ' Ajustar el volumen al 50%
+        waveOut.Play()
 
     End Sub
+
+
+
+
 
 
     Private Sub BackgroundWorker1_DoWork(ByVal sender As System.Object, ByVal e As System.ComponentModel.DoWorkEventArgs) Handles BackgroundWorker1.DoWork
@@ -332,6 +347,8 @@ Public Class MenuPrincipal
 
 
 
+                waveOut.Stop()
+
 
                 Me.Hide()
             Else
@@ -345,6 +362,10 @@ Public Class MenuPrincipal
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtNombre2.TextChanged
+
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
 
     End Sub
 End Class

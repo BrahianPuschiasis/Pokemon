@@ -64,3 +64,13 @@ C:\Users\Administrador\Documents\Digital Tech Developer\Proyectos viejos\Pokemon
 C:\Users\Administrador\Documents\Digital Tech Developer\Proyectos viejos\Pokemon\Pokemon\bin\Debug\ZstdSharp.dll
 C:\Users\Administrador\Documents\Digital Tech Developer\Proyectos viejos\Pokemon\Pokemon\obj\Debug\Pokemon.vbproj.SuggestedBindingRedirects.cache
 C:\Users\Administrador\Documents\Digital Tech Developer\Proyectos viejos\Pokemon\Pokemon\obj\Debug\Pokemon.exe.config
+C:\Users\Administrador\Documents\Digital Tech Developer\Proyectos viejos\Pokemon\Pokemon\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\Administrador\Documents\Digital Tech Developer\Proyectos viejos\Pokemon\Pokemon\bin\Debug\NAudio.dll
+C:\Users\Administrador\Documents\Digital Tech Developer\Proyectos viejos\Pokemon\Pokemon\bin\Debug\NAudio.Asio.dll
+C:\Users\Administrador\Documents\Digital Tech Developer\Proyectos viejos\Pokemon\Pokemon\bin\Debug\NAudio.Core.dll
+C:\Users\Administrador\Documents\Digital Tech Developer\Proyectos viejos\Pokemon\Pokemon\bin\Debug\NAudio.Midi.dll
+C:\Users\Administrador\Documents\Digital Tech Developer\Proyectos viejos\Pokemon\Pokemon\bin\Debug\NAudio.Wasapi.dll
+C:\Users\Administrador\Documents\Digital Tech Developer\Proyectos viejos\Pokemon\Pokemon\bin\Debug\NAudio.WinForms.dll
+C:\Users\Administrador\Documents\Digital Tech Developer\Proyectos viejos\Pokemon\Pokemon\bin\Debug\NAudio.WinMM.dll
+C:\Users\Administrador\Documents\Digital Tech Developer\Proyectos viejos\Pokemon\Pokemon\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Administrador\Documents\Digital Tech Developer\Proyectos viejos\Pokemon\Pokemon\bin\Debug\System.Security.Principal.Windows.dll

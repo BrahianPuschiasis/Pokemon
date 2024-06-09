@@ -1,12 +1,14 @@
 ﻿Imports System
 Imports System.Media
 Imports System.Windows.Forms
+Imports NAudio.Wave
 
 Public Class Tutorial
     Private Declare Sub Sleep Lib "kernel32" (ByVal dwMilliseconds As Long)
     Dim maximohe As Integer
     Dim maximome As Integer
-
+    Private waveOut As WaveOutEvent
+    Private mp3Reader As Mp3FileReader
     Dim medaño As Integer
     Dim hedaño As Integer
     Dim time As Integer = 0
@@ -18,6 +20,15 @@ Public Class Tutorial
     Private Sub Tutorial_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'PictureBox2.Controls.Add(Explosion)
         'PictureBox1.Controls.Add(lblHPnow)
+        ' Ruta relativa al archivo MP3 en la carpeta principal del proyecto
+        Dim mp3Path As String = System.IO.Path.Combine(Application.StartupPath, "wild.mp3")
+        mp3Reader = New Mp3FileReader(mp3Path)
+        WaveOut = New WaveOutEvent()
+        WaveOut.Init(mp3Reader)
+        WaveOut.Volume = 0.1F ' Ajustar el volumen al 50%
+        WaveOut.Play()
+
+
         If ruta01 = 1 Then
             Me.BackgroundImage = Image.FromFile(" " & Application.StartupPath & "\Pokemones Battle\Fondos\grass3.png")
 
@@ -261,9 +272,20 @@ Public Class Tutorial
 
 
                 pokemon1 = primario
+                waveOut.Stop()
+
+                ' Ruta relativa al archivo MP3 en la carpeta principal del proyecto
+                Dim mp3Path As String = System.IO.Path.Combine(Application.StartupPath, "win.mp3")
+                mp3Reader = New Mp3FileReader(mp3Path)
+                waveOut = New WaveOutEvent()
+                waveOut.Init(mp3Reader)
+                waveOut.Volume = 0.1F ' Ajustar el volumen al 50%
+                waveOut.Play()
                 MsgBox("¡Felicidades, has completado el tutorial!")
                 Laboratorio.Show()
                 Me.Close()
+                waveOut.Stop()
+
 
             End If
 
@@ -292,11 +314,21 @@ Public Class Tutorial
                 PokemonMe.Visible = True
                 PictureBox2.Visible = False
                 exp = exp + 20
+                waveOut.Stop()
+                Dim mp3Path As String = System.IO.Path.Combine(Application.StartupPath, "win.mp3")
+                mp3Reader = New Mp3FileReader(mp3Path)
+                waveOut = New WaveOutEvent()
+                waveOut.Init(mp3Reader)
+                waveOut.Volume = 0.1F ' Ajustar el volumen al 50%
+                waveOut.Play()
                 MsgBox("EXP GANADA " & exp & "")
                 If ruta01 = 1 Then
                     Ruta1.Show()
 
                     Me.Close()
+                    waveOut.Stop()
+
+
                 End If
 
 

@@ -4,7 +4,7 @@ UID={root}
 USER={root}
 SERVER=localhost
 PORT=3306
-PASSWORD={asease22}
+PASSWORD={}
 DATABASE={pokemon}
 NO_SCHEMA=1
 

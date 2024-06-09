@@ -34,6 +34,8 @@ Partial Class MenuPrincipal
         Me.txtNombre2 = New System.Windows.Forms.TextBox()
         Me.txtContraseña2 = New System.Windows.Forms.TextBox()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnRegistro
@@ -135,6 +137,28 @@ Partial Class MenuPrincipal
         '
         Me.BackgroundWorker1.WorkerSupportsCancellation = True
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.Label3.Location = New System.Drawing.Point(56, 62)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(54, 13)
+        Me.Label3.TabIndex = 105
+        Me.Label3.Text = "Nombre:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(254, Byte))
+        Me.Label4.Location = New System.Drawing.Point(56, 101)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(71, 13)
+        Me.Label4.TabIndex = 106
+        Me.Label4.Text = "Contraseña"
+        '
         'MenuPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -142,6 +166,8 @@ Partial Class MenuPrincipal
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(371, 217)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txtContraseña2)
         Me.Controls.Add(Me.txtNombre2)
         Me.Controls.Add(Me.btnConnect)
@@ -169,4 +195,6 @@ Partial Class MenuPrincipal
     Friend WithEvents txtNombre2 As TextBox
     Friend WithEvents txtContraseña2 As TextBox
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
 End Class
