@@ -3,15 +3,9 @@ Public Class Registro
 
     Private Sub btnConfirmar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnConfirmar.Click
 
-        Try
-            conectar.Open()
-            ' Aquí va el código para cuando la conexión se abre correctamente
-        Catch ex As Exception
-            ' Aquí manejas la excepción
-            MsgBox("Ocurrió un error al intentar abrir la conexión: " & ex.Message, MsgBoxStyle.Critical, "Error de conexión")
+        conectar.Open()
 
-
-            Dim cmd11 As New MySqlCommand("select Email from PokemonUsuarios where Email = '" & txtEmail.Text & "'", conectar)
+        Dim cmd11 As New MySqlCommand("select Email from PokemonUsuarios where Email = '" & txtEmail.Text & "'", conectar)
             cmd11.ExecuteScalar()
 
             If cmd11.ExecuteScalar <> "" Then
@@ -33,7 +27,8 @@ Public Class Registro
                     Try
                         cmd111.ExecuteNonQuery()
                         MsgBox("¡Registro completado con éxito!")
-                        MenuPrincipal.Show()
+
+                    MenuPrincipal.Show()
                         Me.Close()
 
                     Catch
@@ -42,7 +37,6 @@ Public Class Registro
                 End If
             End If
             conectar.Close()
-        End Try
 
     End Sub
 

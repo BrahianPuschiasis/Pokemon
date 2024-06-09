@@ -77,8 +77,7 @@ Public Class Primarios
 
         conectar.Open()
 
-        Dim sentenciaSQL As String = "UPDATE PokemonUsuarios SET Primario=" & primario & ", Pokemon1=" & primario & " WHERE Nick='" & nick & "'"
-        MsgBox("Sentencia SQL: " & sentenciaSQL)
+
 
         Dim cmd55 As New MySqlCommand("UPDATE PokemonUsuarios set Primario= " & primario & ", Pokemon1= " & primario & " where Nick='" & nick & "'", conectar)
         cmd55.ExecuteNonQuery()
