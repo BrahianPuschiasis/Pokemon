@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class MenuPrincipal
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,18 +20,20 @@ Partial Class MenuPrincipal
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuPrincipal))
-        Me.btnRegistro = New System.Windows.Forms.Button
-        Me.btnConectar = New System.Windows.Forms.Button
-        Me.txtNombre = New System.Windows.Forms.TextBox
-        Me.txtContraseña = New System.Windows.Forms.TextBox
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker
-        Me.Opening = New AxWMPLib.AxWindowsMediaPlayer
-        CType(Me.Opening, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnRegistro = New System.Windows.Forms.Button()
+        Me.btnConectar = New System.Windows.Forms.Button()
+        Me.txtNombre = New System.Windows.Forms.TextBox()
+        Me.txtContraseña = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.btnConnect = New System.Windows.Forms.Button()
+        Me.btnRegistros = New System.Windows.Forms.Button()
+        Me.txtNombre2 = New System.Windows.Forms.TextBox()
+        Me.txtContraseña2 = New System.Windows.Forms.TextBox()
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.SuspendLayout()
         '
         'btnRegistro
@@ -91,19 +93,47 @@ Partial Class MenuPrincipal
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Contraseña:"
         '
+        'btnConnect
+        '
+        Me.btnConnect.Location = New System.Drawing.Point(241, 165)
+        Me.btnConnect.Name = "btnConnect"
+        Me.btnConnect.Size = New System.Drawing.Size(75, 23)
+        Me.btnConnect.TabIndex = 101
+        Me.btnConnect.TabStop = False
+        Me.btnConnect.Text = "Conectar"
+        Me.btnConnect.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnConnect.UseVisualStyleBackColor = True
+        '
+        'btnRegistros
+        '
+        Me.btnRegistros.Location = New System.Drawing.Point(84, 165)
+        Me.btnRegistros.Name = "btnRegistros"
+        Me.btnRegistros.Size = New System.Drawing.Size(75, 23)
+        Me.btnRegistros.TabIndex = 102
+        Me.btnRegistros.TabStop = False
+        Me.btnRegistros.Text = "Registro"
+        Me.btnRegistros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnRegistros.UseVisualStyleBackColor = True
+        '
+        'txtNombre2
+        '
+        Me.txtNombre2.Location = New System.Drawing.Point(128, 59)
+        Me.txtNombre2.MaxLength = 10
+        Me.txtNombre2.Name = "txtNombre2"
+        Me.txtNombre2.Size = New System.Drawing.Size(106, 20)
+        Me.txtNombre2.TabIndex = 103
+        '
+        'txtContraseña2
+        '
+        Me.txtContraseña2.Location = New System.Drawing.Point(128, 98)
+        Me.txtContraseña2.MaxLength = 10
+        Me.txtContraseña2.Name = "txtContraseña2"
+        Me.txtContraseña2.Size = New System.Drawing.Size(106, 20)
+        Me.txtContraseña2.TabIndex = 104
+        '
         'BackgroundWorker1
         '
         Me.BackgroundWorker1.WorkerSupportsCancellation = True
-        '
-        'Opening
-        '
-        Me.Opening.Enabled = True
-        Me.Opening.Location = New System.Drawing.Point(275, 49)
-        Me.Opening.Name = "Opening"
-        Me.Opening.OcxState = CType(resources.GetObject("Opening.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.Opening.Size = New System.Drawing.Size(75, 23)
-        Me.Opening.TabIndex = 6
-        Me.Opening.Visible = False
         '
         'MenuPrincipal
         '
@@ -112,13 +142,10 @@ Partial Class MenuPrincipal
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(371, 217)
-        Me.Controls.Add(Me.Opening)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.txtContraseña)
-        Me.Controls.Add(Me.txtNombre)
-        Me.Controls.Add(Me.btnConectar)
-        Me.Controls.Add(Me.btnRegistro)
+        Me.Controls.Add(Me.txtContraseña2)
+        Me.Controls.Add(Me.txtNombre2)
+        Me.Controls.Add(Me.btnConnect)
+        Me.Controls.Add(Me.btnRegistros)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.ImeMode = System.Windows.Forms.ImeMode.[On]
         Me.KeyPreview = True
@@ -127,7 +154,6 @@ Partial Class MenuPrincipal
         Me.Name = "MenuPrincipal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Pokemon ???"
-        CType(Me.Opening, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -138,6 +164,9 @@ Partial Class MenuPrincipal
     Friend WithEvents txtContraseña As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents btnConnect As Button
+    Friend WithEvents btnRegistros As Button
+    Friend WithEvents txtNombre2 As TextBox
+    Friend WithEvents txtContraseña2 As TextBox
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
-    Friend WithEvents Opening As AxWMPLib.AxWindowsMediaPlayer
 End Class

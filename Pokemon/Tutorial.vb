@@ -30,8 +30,6 @@ Public Class Tutorial
 
 
             'Me.myMedia.URL = "C:\Users\pc\Desktop\Pokemon\Pokemon\bin\Debug\wild.mp3"
-            Me.myMedia.URL = " " & Application.StartupPath & "\wild.mp3 "
-            myMedia.settings.setMode("loop", True)
 
 
 
@@ -83,8 +81,7 @@ Public Class Tutorial
             pokewild()
             dañome()
 
-            Me.myMedia.URL = " " & Application.StartupPath & "\wild.mp3 "
-            myMedia.settings.setMode("loop", True)
+
             '       habilidadhe = "None"
             dañohe()
 
@@ -249,7 +246,6 @@ Public Class Tutorial
 
                 btnSkill4.Enabled = False
 
-                Me.myMedia.URL = " " & Application.StartupPath & "\win.mp3 "
 
 
                 Explot.Enabled = True
@@ -290,7 +286,6 @@ Public Class Tutorial
                 hphe.Width = 0
 
 
-                Me.myMedia.URL = " " & Application.StartupPath & "\win.mp3 "
 
 
                 Explot.Enabled = True
@@ -313,7 +308,6 @@ Public Class Tutorial
                     HPme.Width = 0
                     lblHPnow.Text = 0
 
-                    Me.myMedia.URL = " " & Application.StartupPath & "\Lose.wav"
                     Explosion.Location = PokemonMe.Location
 
 
@@ -423,9 +417,7 @@ Public Class Tutorial
         pelea.ScrollToCaret()
     End Sub
 
-    Private Sub AxWindowsMediaPlayer1_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles myMedia.Enter
 
-    End Sub
 
     Private Sub squa_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
@@ -538,7 +530,6 @@ Public Class Tutorial
             hphe.Width = 0
 
 
-            Me.myMedia.URL = " " & Application.StartupPath & "\win.mp3 "
 
 
             Explot.Enabled = True
@@ -550,7 +541,6 @@ Public Class Tutorial
                 HPme.Width = 0
                 lblHPnow.Text = 0
 
-                Me.myMedia.URL = " " & Application.StartupPath & "\Lose.wav"
                 Explosion.Location = PokemonMe.Location
 
 
@@ -666,7 +656,6 @@ Public Class Tutorial
             hphe.Width = 0
 
 
-            Me.myMedia.URL = " " & Application.StartupPath & "\win.mp3 "
 
 
             Explot.Enabled = True
@@ -678,7 +667,6 @@ Public Class Tutorial
                 HPme.Width = 0
                 lblHPnow.Text = 0
 
-                Me.myMedia.URL = " " & Application.StartupPath & "\Lose.wav"
                 Explosion.Location = PokemonMe.Location
 
 
@@ -795,7 +783,6 @@ Public Class Tutorial
             hphe.Width = 0
 
 
-            Me.myMedia.URL = " " & Application.StartupPath & "\win.mp3 "
 
 
             Explot.Enabled = True
@@ -807,7 +794,6 @@ Public Class Tutorial
                 HPme.Width = 0
                 lblHPnow.Text = 0
 
-                Me.myMedia.URL = " " & Application.StartupPath & "\Lose.wav"
                 Explosion.Location = PokemonMe.Location
 
 
@@ -907,5 +893,9 @@ Public Class Tutorial
 
 
   
+    End Sub
+
+    Private Sub PokeNicks_SelectedIndexChanged(sender As Object, e As EventArgs) Handles PokeNicks.SelectedIndexChanged
+
     End Sub
 End Class

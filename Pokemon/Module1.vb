@@ -1,5 +1,12 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.Runtime.Remoting.Contexts
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox
+Imports MySql.Data.MySqlClient
 Public Module module1
+    Public conect As New Odbc.OdbcConnection
+    Public Cmd As New Odbc.OdbcCommand
+
+
+
     Public jugador As String
     Public caminar As Integer = 0
     Public pokemon1 As Integer = 0
@@ -9,7 +16,8 @@ Public Module module1
     Public pokemon5 As Integer = 0
     Public pokemon6 As Integer = 0
     Public primario As Integer = 0
-    Public conectar As New MySqlConnection("localhost;user=root;password=asease22;database=pokemon;port=3306")
+    Public conectar As New MySqlConnection("Server=localhost;Port=3306;Database=pokemon;Uid=root;Pwd=asease22")
+
     Public posicionx As Integer
     Public posiciony As Integer
     Public casa As Integer = 0
@@ -106,7 +114,7 @@ Public Module module1
             power = 40
         End If
 
-   
+
 
         multiplicaizq = 0.01 * 85 * 1
         parentesisdivisor = 0.2 * LVL + 1
@@ -195,7 +203,7 @@ Public Module module1
         End If
 
 
-       
+
 
 
 

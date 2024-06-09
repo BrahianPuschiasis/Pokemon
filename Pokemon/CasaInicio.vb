@@ -305,4 +305,8 @@
 
 
     End Sub
+
+    Private Sub Nickname_Click(sender As Object, e As EventArgs) Handles Nickname.Click
+
+    End Sub
 End Class

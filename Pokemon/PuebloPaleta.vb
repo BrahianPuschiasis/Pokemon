@@ -389,4 +389,8 @@
     Private Sub Mapa1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Mapa1.Click
 
     End Sub
+
+    Private Sub bulba_Click(sender As Object, e As EventArgs) Handles bulba.Click
+
+    End Sub
 End Class

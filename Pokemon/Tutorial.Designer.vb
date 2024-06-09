@@ -22,43 +22,41 @@ Partial Class Tutorial
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Tutorial))
-        Me.PokemonMe = New System.Windows.Forms.PictureBox
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox
-        Me.barMe = New System.Windows.Forms.ProgressBar
-        Me.barHe = New System.Windows.Forms.ProgressBar
-        Me.lblMe = New System.Windows.Forms.Label
-        Me.lblHe = New System.Windows.Forms.Label
-        Me.btnSkill4 = New System.Windows.Forms.Button
-        Me.pelea = New System.Windows.Forms.RichTextBox
-        Me.myMedia = New AxWMPLib.AxWindowsMediaPlayer
-        Me.Explosion = New System.Windows.Forms.PictureBox
+        Me.PokemonMe = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.barMe = New System.Windows.Forms.ProgressBar()
+        Me.barHe = New System.Windows.Forms.ProgressBar()
+        Me.lblMe = New System.Windows.Forms.Label()
+        Me.lblHe = New System.Windows.Forms.Label()
+        Me.btnSkill4 = New System.Windows.Forms.Button()
+        Me.pelea = New System.Windows.Forms.RichTextBox()
+        Me.Explosion = New System.Windows.Forms.PictureBox()
         Me.Explo = New System.Windows.Forms.ImageList(Me.components)
         Me.Explot = New System.Windows.Forms.Timer(Me.components)
-        Me.Label1 = New System.Windows.Forms.Label
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Rojo = New System.Windows.Forms.ImageList(Me.components)
-        Me.Cambio = New System.Windows.Forms.PictureBox
+        Me.Cambio = New System.Windows.Forms.PictureBox()
         Me.Change = New System.Windows.Forms.Timer(Me.components)
-        Me.btnCambio = New System.Windows.Forms.Button
-        Me.HUDHe = New System.Windows.Forms.PictureBox
-        Me.hphe = New System.Windows.Forms.PictureBox
+        Me.btnCambio = New System.Windows.Forms.Button()
+        Me.HUDHe = New System.Windows.Forms.PictureBox()
+        Me.hphe = New System.Windows.Forms.PictureBox()
         Me.vidas = New System.Windows.Forms.ImageList(Me.components)
-        Me.HPme = New System.Windows.Forms.PictureBox
-        Me.lblHPnow = New System.Windows.Forms.Label
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox
-        Me.lblHPMax = New System.Windows.Forms.Label
-        Me.lblMelvl = New System.Windows.Forms.Label
-        Me.lblHelvl = New System.Windows.Forms.Label
-        Me.btnSkill3 = New System.Windows.Forms.Button
-        Me.btnSkill2 = New System.Windows.Forms.Button
-        Me.btnSkill1 = New System.Windows.Forms.Button
-        Me.PokeNicks = New System.Windows.Forms.ListBox
-        Me.lblNickMe = New System.Windows.Forms.Label
-        Me.lblNickhe = New System.Windows.Forms.Label
+        Me.HPme = New System.Windows.Forms.PictureBox()
+        Me.lblHPnow = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.lblHPMax = New System.Windows.Forms.Label()
+        Me.lblMelvl = New System.Windows.Forms.Label()
+        Me.lblHelvl = New System.Windows.Forms.Label()
+        Me.btnSkill3 = New System.Windows.Forms.Button()
+        Me.btnSkill2 = New System.Windows.Forms.Button()
+        Me.btnSkill1 = New System.Windows.Forms.Button()
+        Me.PokeNicks = New System.Windows.Forms.ListBox()
+        Me.lblNickMe = New System.Windows.Forms.Label()
+        Me.lblNickhe = New System.Windows.Forms.Label()
         CType(Me.PokemonMe, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.myMedia, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Explosion, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Cambio, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.HUDHe, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -145,7 +143,7 @@ Partial Class Tutorial
         'pelea
         '
         Me.pelea.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pelea.BackColor = System.Drawing.Color.Black
         Me.pelea.ForeColor = System.Drawing.Color.White
         Me.pelea.Location = New System.Drawing.Point(0, 373)
@@ -154,16 +152,6 @@ Partial Class Tutorial
         Me.pelea.Size = New System.Drawing.Size(971, 179)
         Me.pelea.TabIndex = 7
         Me.pelea.Text = ""
-        '
-        'myMedia
-        '
-        Me.myMedia.Enabled = True
-        Me.myMedia.Location = New System.Drawing.Point(116, 86)
-        Me.myMedia.Name = "myMedia"
-        Me.myMedia.OcxState = CType(resources.GetObject("myMedia.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.myMedia.Size = New System.Drawing.Size(10, 10)
-        Me.myMedia.TabIndex = 10
-        Me.myMedia.Visible = False
         '
         'Explosion
         '
@@ -292,11 +280,11 @@ Partial Class Tutorial
         '
         Me.lblHPnow.AutoSize = True
         Me.lblHPnow.BackColor = System.Drawing.Color.White
-        Me.lblHPnow.Font = New System.Drawing.Font("Perpetua Titling MT", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHPnow.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHPnow.ForeColor = System.Drawing.Color.Black
         Me.lblHPnow.Location = New System.Drawing.Point(267, 203)
         Me.lblHPnow.Name = "lblHPnow"
-        Me.lblHPnow.Size = New System.Drawing.Size(55, 13)
+        Me.lblHPnow.Size = New System.Drawing.Size(47, 13)
         Me.lblHPnow.TabIndex = 20
         Me.lblHPnow.Text = "asdasd"
         '
@@ -317,11 +305,11 @@ Partial Class Tutorial
         '
         Me.lblHPMax.AutoSize = True
         Me.lblHPMax.BackColor = System.Drawing.Color.White
-        Me.lblHPMax.Font = New System.Drawing.Font("Perpetua Titling MT", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHPMax.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHPMax.ForeColor = System.Drawing.Color.Black
         Me.lblHPMax.Location = New System.Drawing.Point(307, 203)
         Me.lblHPMax.Name = "lblHPMax"
-        Me.lblHPMax.Size = New System.Drawing.Size(55, 13)
+        Me.lblHPMax.Size = New System.Drawing.Size(47, 13)
         Me.lblHPMax.TabIndex = 21
         Me.lblHPMax.Text = "asdasd"
         '
@@ -329,11 +317,11 @@ Partial Class Tutorial
         '
         Me.lblMelvl.AutoSize = True
         Me.lblMelvl.BackColor = System.Drawing.Color.White
-        Me.lblMelvl.Font = New System.Drawing.Font("Perpetua Titling MT", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMelvl.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMelvl.ForeColor = System.Drawing.Color.Black
         Me.lblMelvl.Location = New System.Drawing.Point(307, 169)
         Me.lblMelvl.Name = "lblMelvl"
-        Me.lblMelvl.Size = New System.Drawing.Size(16, 22)
+        Me.lblMelvl.Size = New System.Drawing.Size(21, 22)
         Me.lblMelvl.TabIndex = 22
         Me.lblMelvl.Text = "1"
         '
@@ -341,11 +329,11 @@ Partial Class Tutorial
         '
         Me.lblHelvl.AutoSize = True
         Me.lblHelvl.BackColor = System.Drawing.Color.White
-        Me.lblHelvl.Font = New System.Drawing.Font("Perpetua Titling MT", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHelvl.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHelvl.ForeColor = System.Drawing.Color.Black
         Me.lblHelvl.Location = New System.Drawing.Point(783, 52)
         Me.lblHelvl.Name = "lblHelvl"
-        Me.lblHelvl.Size = New System.Drawing.Size(16, 22)
+        Me.lblHelvl.Size = New System.Drawing.Size(21, 22)
         Me.lblHelvl.TabIndex = 23
         Me.lblHelvl.Text = "1"
         '
@@ -431,7 +419,6 @@ Partial Class Tutorial
         Me.Controls.Add(Me.Cambio)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Explosion)
-        Me.Controls.Add(Me.myMedia)
         Me.Controls.Add(Me.pelea)
         Me.Controls.Add(Me.btnSkill4)
         Me.Controls.Add(Me.lblHe)
@@ -446,7 +433,6 @@ Partial Class Tutorial
         Me.Text = "PeleaInicial"
         CType(Me.PokemonMe, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.myMedia, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Explosion, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Cambio, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.HUDHe, System.ComponentModel.ISupportInitialize).EndInit()
@@ -465,7 +451,6 @@ Partial Class Tutorial
     Friend WithEvents lblHe As System.Windows.Forms.Label
     Friend WithEvents btnSkill4 As System.Windows.Forms.Button
     Friend WithEvents pelea As System.Windows.Forms.RichTextBox
-    Friend WithEvents myMedia As AxWMPLib.AxWindowsMediaPlayer
     Friend WithEvents Explosion As System.Windows.Forms.PictureBox
     Friend WithEvents Explo As System.Windows.Forms.ImageList
     Friend WithEvents Explot As System.Windows.Forms.Timer

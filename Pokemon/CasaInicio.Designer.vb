@@ -22,14 +22,14 @@ Partial Class CasaInicio
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CasaInicio))
-        Me.Mapa1 = New System.Windows.Forms.PictureBox
+        Me.Mapa1 = New System.Windows.Forms.PictureBox()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.bulba = New System.Windows.Forms.PictureBox
-        Me.Nickname = New System.Windows.Forms.Label
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.bulba = New System.Windows.Forms.PictureBox()
+        Me.Nickname = New System.Windows.Forms.Label()
         CType(Me.Mapa1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.bulba, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()

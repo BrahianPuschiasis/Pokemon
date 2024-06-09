@@ -22,9 +22,9 @@ Partial Class Pokemones
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Primero = New System.Windows.Forms.PictureBox
-        Me.txtStats = New System.Windows.Forms.RichTextBox
-        Me.Button1 = New System.Windows.Forms.Button
+        Me.Primero = New System.Windows.Forms.PictureBox()
+        Me.txtStats = New System.Windows.Forms.RichTextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.Primero, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -39,7 +39,7 @@ Partial Class Pokemones
         'txtStats
         '
         Me.txtStats.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtStats.BackColor = System.Drawing.SystemColors.Control
         Me.txtStats.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtStats.ForeColor = System.Drawing.Color.Black

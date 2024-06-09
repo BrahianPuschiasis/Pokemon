@@ -74,4 +74,8 @@
 
 
     End Sub
+
+    Private Sub Primero_Click(sender As Object, e As EventArgs) Handles Primero.Click
+
+    End Sub
 End Class
