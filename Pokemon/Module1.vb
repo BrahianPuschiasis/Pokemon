@@ -1,7 +1,13 @@
 ﻿Imports System.Runtime.Remoting.Contexts
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox
 Imports MySql.Data.MySqlClient
+Imports System.IO
+
 Public Module module1
+
+
+
+
     Public conect As New Odbc.OdbcConnection
     Public Cmd As New Odbc.OdbcCommand
 
@@ -17,6 +23,34 @@ Public Module module1
     Public pokemon6 As Integer = 0
     Public primario As Integer = 0
     Public conectar As New MySqlConnection("Server=localhost;Port=3306;Database=pokemon;Uid=root;Pwd=asease22")
+
+
+
+    Public conectar2 As New MySqlConnection("Server=localhost;Port=3306;Uid=root;Pwd=asease22")
+
+    Public Sub EjecutarScriptSQL()
+        Dim sqlPath As String = System.IO.Path.Combine(Application.StartupPath, "pokemon.sql") ' Ruta al archivo SQL
+
+        Try
+            ' Leer el archivo SQL
+            Dim script As String = File.ReadAllText(sqlPath)
+
+            ' Abrir conexión
+            conectar2.Open()
+
+            ' Ejecutar script SQL para crear la base de datos y sus tablas
+            Dim command As New MySqlCommand(script, conectar2)
+            command.ExecuteNonQuery()
+
+            ' MessageBox.Show("Archivo SQL ejecutado correctamente.")
+        Catch ex As Exception
+            MessageBox.Show("Error al ejecutar el archivo SQL: " & ex.Message)
+        Finally
+            ' Cerrar conexión
+            conectar2.Close()
+        End Try
+    End Sub
+
 
     Public posicionx As Integer
     Public posiciony As Integer

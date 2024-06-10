@@ -200,6 +200,8 @@ Public Class MenuPrincipal
                         skill4 = skill04.ExecuteScalar
 
                         hpnow = hp
+                        waveOut.Stop()
+
                         CasaInicio.Show()
                         ' MsgBox(hp)
                         'MsgBox(attack)
@@ -237,6 +239,11 @@ Public Class MenuPrincipal
 
 
     Private Sub MenuPrincipal_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        EjecutarScriptSQL()
+
+
+
+
         ' Ruta relativa al archivo MP3 en la carpeta principal del proyecto
         Dim mp3Path As String = System.IO.Path.Combine(Application.StartupPath, "Login.mp3")
         mp3Reader = New Mp3FileReader(mp3Path)
